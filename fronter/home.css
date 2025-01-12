@@ -1,0 +1,167 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #10292F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1400px;
+    padding: 20px;
+}
+
+/* Individual Cards */
+.card1 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.card2 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    height: 650px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.card3 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    height: 700px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.card4 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.card5 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    height: 300;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.card6 {
+    background-color: #E5F690;
+    border: 3px solid beige;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Consistent width for all cards */
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+}
+
+/* Images */
+.card1 img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+    border-bottom: 3px solid beige;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.card2 img {
+    width: 100%;
+    height: 590px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom: 3px solid beige;
+}
+.card3 img {
+    width: 100%;
+    height: 640px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom: 3px solid beige;
+}
+.card4 img {
+    width: 100%;
+    height: 500px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom: 3px solid beige;
+}
+.card5 img {
+    width: 100%;
+    height: 240px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom: 3px solid beige;
+}
+.card6 img {
+    width: 100%;
+    height: 240px; /* Fixed height for images */
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom: 3px solid beige;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+}
+
+.card-button {
+    background-color: #10292F;
+    color: #E5F690;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #E5F690;
+    color: #10292F;
+}
