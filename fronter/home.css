@@ -11,43 +11,61 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
+
+#ok
+{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
 /* Container */
 .card-container {
-    padding-top: 50px;
+    /* padding-top: 60px; */
+    height: 90svh;
     display: grid;
-    grid-template-columns: 300px 20px 300px 20px 300px 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
 }
 .col1{
     position: relative;
-    grid-column: 1 / 2;
-    display: grid;
-    grid-template-rows: 70px  70px 70px 15px 70px 70px 70px 70px 70px 70px ;
-    grid-template-columns: 300px 50px 300px 50px 300px 50px;
+    display: flex;
+    flex-direction: column;
+    /* grid-column: 1 / 2; */
+    /* display: grid; */
+    /* grid-template-rows: 70px  70px 70px 20px 70px 70px 70px 70px 70px 70px ; */
+    /* grid-template-columns: 300px; */
     border-color: 3px solid gold;
+    row-gap: 10px;
 }
 .col2{
     position: relative;
-    grid-column: 3 / 4;
-    display: grid;
-    grid-template-columns: 300px 50px 300px 50px 300px 50px;
-    grid-template-rows: 70px  70px 70px 70px 70px 15px 70px 70px 70px 70px;
+    /* grid-column: 3 / 4; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 300px; */
+    /* grid-template-rows: 70px  70px 70px 70px 70px 20px 70px 70px 70px 70px; */
     border-color: 3px solid gold;
+    row-gap: 10px;
 }
 .col3{
     position: relative;
-    grid-column: 5 / 6;
-    display: grid;
-    grid-template-columns: 300px 50px 300px 50px 300px 50px;
-    grid-template-rows: 70px  70px 70px 70px 70px 70px 15px 70px 70px 70px;
+    /* grid-column: 5 / 6; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 300px; */
+    /* grid-template-rows: 70px  70px 70px 70px 70px 70px 20px 70px 70px 70px; */
     border-color: 3px solid gold;
+    row-gap: 10px;
 }
 .card1 {
     position: relative;
-    grid-row: 1 / 4;
-    grid-column: 1 / 2;
+    /* grid-row: 1 / 4; */
+    /* grid-column: 1 / 2; */
     background-color: #939c5e;
     border-radius: 20px;
     background-image: url(pictures/Screen_Shot_2025-01-12_at_12.47.51_AM-removebg-preview.png);
@@ -56,66 +74,73 @@ body {
     background-position: center ;
     display: flex;
     align-items: flex-end;
+    height: 40%;
+    
 }
 
 .card2 {
     position: relative;
-    grid-row: 1/6;
-    grid-column: 1/ 2;
+    /* grid-row: 1/6; */
+    /* grid-column: 1/ 2; */
     background-image: url("pictures/Screen Shot 2024-10-02 at 3.44.26 AM.png");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    height: 50%;
 }
 
 .card3 {
     position: relative;
-    grid-row: 1/7;
-    grid-column: 1/ 2;
+    /* grid-row: 1/7; */
+    /* grid-column: 1/ 2; */
     background-image: url("pictures/Screen Shot 2024-10-02 at 2.10.41 AM.png");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    height: 70%;
 }
 
 .card4 {
     position: relative;
-    grid-row: 5/10;
-    grid-column: 1/2;
+    /* grid-row: 5/10; */
+    /* grid-column: 1/2; */
     background-image: url("pictures/Screen Shot 2024-10-02 at 3.53.12 AM.png");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    height: 60%;
 }
 
 .card5 {
     position: relative;
-    grid-row: 7/10;
-    grid-column: 1/2;
+    /* grid-row: 7/10; */
+    /* grid-column: 1/2; */
     background-image: url("pictures/Screen Shot 2024-10-02 at 3.57.08 AM.png") ;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    height: 50%;
 }
 
 .card6 {
     position: relative;
-    grid-row: 8/10;
-    grid-column: 1/2;
+    /* grid-row: 8/10; */
+    /* grid-column: 1/2; */
     background-image: url("pictures/Screen Shot 2024-10-02 at 4.18.58 AM.png");
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: flex-end;
+    height: 30%;
 }
 
 .card:hover {
@@ -150,4 +175,16 @@ body {
 .card-button:hover {
     background-color: #E5F690;
     color: #10292F;
+}
+
+@media screen  and (max-width : 1024px){
+    .card-container{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen  and (max-width : 681px){
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
