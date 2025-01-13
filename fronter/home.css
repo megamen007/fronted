@@ -16,150 +16,136 @@ body {
 
 /* Container */
 .card-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 20px 300px 20px 300px 20px;
+}
+.col1{
+    position: relative;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 70px  70px 70px 15px 70px 70px 70px 70px 70px 70px ;
+    grid-template-columns: 300px 50px 300px 50px 300px 50px;
+    border-color: 3px solid gold;
+}
+.col2{
+    position: relative;
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 300px 50px 300px 50px 300px 50px;
+    grid-template-rows: 70px  70px 70px 70px 70px 15px 70px 70px 70px 70px;
+    border-color: 3px solid gold;
+}
+.col3{
+    position: relative;
+    grid-column: 5 / 6;
+    display: grid;
+    grid-template-columns: 300px 50px 300px 50px 300px 50px;
+    grid-template-rows: 70px  70px 70px 70px 70px 70px 15px 70px 70px 70px;
+    border-color: 3px solid gold;
+}
+.card1 {
+    position: relative;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: #939c5e;
+    border-radius: 20px;
+    background-image: url(pictures/Screen_Shot_2025-01-12_at_12.47.51_AM-removebg-preview.png);
+    background-size: 175px 100px;
+    background-repeat: no-repeat;
+    background-position: center ;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    max-width: 1400px;
-    padding: 20px;
+    align-items: flex-end;
 }
 
-/* Individual Cards */
-.card1 {
-    background-color: #E5F690;
-    border: 3px solid beige;
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    height: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-}
 .card2 {
-    background-color: #E5F690;
-    border: 3px solid beige;
+    position: relative;
+    grid-row: 1/6;
+    grid-column: 1/ 2;
+    background-image: url("pictures/Screen Shot 2024-10-02 at 3.44.26 AM.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    height: 650px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
 }
+
 .card3 {
-    background-color: #E5F690;
-    border: 3px solid beige;
+    position: relative;
+    grid-row: 1/7;
+    grid-column: 1/ 2;
+    background-image: url("pictures/Screen Shot 2024-10-02 at 2.10.41 AM.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    height: 700px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
 }
+
 .card4 {
-    background-color: #E5F690;
-    border: 3px solid beige;
+    position: relative;
+    grid-row: 5/10;
+    grid-column: 1/2;
+    background-image: url("pictures/Screen Shot 2024-10-02 at 3.53.12 AM.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
 }
+
 .card5 {
-    background-color: #E5F690;
-    border: 3px solid beige;
+    position: relative;
+    grid-row: 7/10;
+    grid-column: 1/2;
+    background-image: url("pictures/Screen Shot 2024-10-02 at 3.57.08 AM.png") ;
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    height: 300;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
 }
+
 .card6 {
-    background-color: #E5F690;
-    border: 3px solid beige;
+    position: relative;
+    grid-row: 8/10;
+    grid-column: 1/2;
+    background-image: url("pictures/Screen Shot 2024-10-02 at 4.18.58 AM.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 400px; /* Consistent width for all cards */
-    height: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
-    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Slight hover effect */
+    transform: translateY(-10px);
 }
 
-/* Images */
-.card1 img {
-    width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover;
-    border-bottom: 3px solid beige;
-    border-radius: 20px;
-    padding-top: 20px;
-}
-.card2 img {
-    width: 100%;
-    height: 590px; /* Fixed height for images */
-    object-fit: cover;
-    border-radius: 20px;
-    border-bottom: 3px solid beige;
-}
-.card3 img {
-    width: 100%;
-    height: 640px; /* Fixed height for images */
-    object-fit: cover;
-    border-radius: 20px;
-    border-bottom: 3px solid beige;
-}
-.card4 img {
-    width: 100%;
-    height: 500px; /* Fixed height for images */
-    object-fit: cover;
-    border-radius: 20px;
-    border-bottom: 3px solid beige;
-}
-.card5 img {
-    width: 100%;
-    height: 240px; /* Fixed height for images */
-    object-fit: cover;
-    border-radius: 20px;
-    border-bottom: 3px solid beige;
-}
-.card6 img {
-    width: 100%;
-    height: 240px; /* Fixed height for images */
-    object-fit: cover;
-    border-radius: 20px;
-    border-bottom: 3px solid beige;
-}
-
-/* Card Content */
 .card-content {
     padding: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .card-button {
+    border-color:  3px solid #E5F690;
+    text-align: center;
+    bottom: 0; 
+    left: 50%; 
     background-color: #10292F;
     color: #E5F690;
     text-decoration: none;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 20px; 
+    border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transform: translateY(7px);
 }
+
 
 .card-button:hover {
     background-color: #E5F690;
