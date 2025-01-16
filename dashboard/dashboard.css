@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p{
+    color:blue;
+}
+
+body{
+    background-color: #10292F;
+    justify-content: center;
+    align-items: center;
+}
+#lo{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container{
+    max-height: 900px;
+    height: 100svh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 250px 800px 250px;
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: tan;
+}
+
+.col1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: 3px solid gold;
+    row-gap: 10px;
+    height: 100%;
+}
+.col2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: 3px solid gold;
+    row-gap: 10px;
+    height: 100%;
+}
+.col3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: 3px solid gold;
+    row-gap: 10px;
+    height: 100%;
+}
+.card1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color:3px solid red;
+    height: 100%;
+}
+
+.card1-enlign-freinds{  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua; 
+    height: 50%;
+}
+
+.card1-enlign-tournaments{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 50%;
+
+}
+.card2{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-color:3px solid red;
+    height: 20%;
+}
+.card2-col1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    width: 70%;
+}
+.card2-image{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.card2-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: yellow;
+    align-items: center;
+    align-content: stretch;
+}
+.card2-buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    background-color: bisque;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.card3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    border-color:3px solid red;
+    height: 20%;
+
+}
+.card3-part1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: darkmagenta;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+.card3-part2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: tomato;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+.card3-part3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: fuchsia;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+.card3-part4{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: lawngreen;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+.card3-part5{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: grey;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+.card3-part6{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: green;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 50%;
+    width: 30%;
+}
+
+.card4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: 3px solid red;
+    height: 60%;
+}
+
+.changing-catalog{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: hotpink;
+    height: 10%;
+}
+.statistics-graphs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    height: 90%;
+}
+.card5{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color:3px solid red;
+    height: 100%;
+}
+.card5-profile-infos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+}
+.card5-settings{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+}
+
+.input1 , .input2 , .input3  , .input4 , .input5 , .input6{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+}
+.card5-profile-infos-part1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    align-items: center;
+    align-content: center;
+}
+
+.card5-profile-infos-part2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    align-items: center;
+    align-content: center;
+}
+
+.card5-part1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+}
+
+.card5-part2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+.Save-Changes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    align-content: center;
+}
