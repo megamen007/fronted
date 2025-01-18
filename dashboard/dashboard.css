@@ -6,7 +6,7 @@
 }
 
 p{
-    color:blue;
+    color:black;
 }
 
 body{
@@ -29,8 +29,8 @@ body{
     align-items: center;
     grid-template-columns: 250px 800px 250px;
     column-gap: 20px;
-    row-gap: 10px;
-    background-color: tan;
+    /* row-gap: px; */
+    /* background-color: tan; */
 }
 
 .col1{
@@ -40,13 +40,16 @@ body{
     border-color: 3px solid gold;
     row-gap: 10px;
     height: 100%;
+    padding: 7px;
+    background-color: #EFF3DD;
+    border-radius: 20px;
 }
 .col2{
     position: relative;
     display: flex;
     flex-direction: column;
     border-color: 3px solid gold;
-    row-gap: 10px;
+    row-gap: 20px;
     height: 100%;
 }
 .col3{
@@ -61,69 +64,168 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
     border-color:3px solid red;
     height: 100%;
+    row-gap: 10px;
+    border-radius: 20px;
 }
 
-.card1-enlign-freinds{  
+
+.card1-enlign-freinds p , .card1-enlign-tournaments p{
+    color: black;
+    padding: 2%;
+}
+.card1-enlign-freinds{ 
+    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: aqua; 
+    /* background-color: #10292F; */
+    padding: 4%;
     height: 50%;
+    border-radius: 20px;
+    width: 95%;
+    align-self: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+.freinds-list{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: saddlebrown; */
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    row-gap: 20px;
+    border-radius: 20px;
+    /* padding: 10px; */
+}
+
+.friends1 , .friends2 , .friends3, .friends4, .friends5{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* height: 20%; */
+    height: 15%;
+    align-items: center;
+    background-color:#E5F690;
+    border-radius: 20px;
+    border: 1px solid #10292F;
+    /* background-color: #E5F690; */
+    padding: 5%;
+}
+
+.Tournaments-list{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    row-gap: 20px;
+    border-radius: 20px;
+    /* padding: 10px; */
+}
+
+.Tournament1 , .Tournament2 , .Tournament3  , .Tournament4, .Tournament5{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    align-items: center;
+    background-color:#E5F690;
+    border-radius: 20px;
+    border: 1px solid #10292F;
+    padding: 5%;
+    
+}
+.Tournament1-Players, .Tournament2-Players , .Tournament3-Players, .Tournament4-Players, .Tournament5-Players{
+    position: relative;
+    display: flex;
+}
+
+.Tournament1-name, .Tournament2-name , .Tournament3-name, .Tournament4-name, .Tournament5-name{
+    position: relative;
+    display: flex;
+}
+
+join{
+    position: relative;
+    display: flex;
 }
 
 .card1-enlign-tournaments{
+    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    /* background-color: #10292F;  */
     height: 50%;
-
+    padding: 2%;
+    border-radius: 20px;
+    width: 95%;
+    align-self: center;
 }
 .card2{
     /* position: relative; */
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: #EFF3DD;
     border-color:3px solid red;
     height: 20%;
+    border-radius: 20px;
+    padding: 1%;
 }
 .card2-col1{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: coral;
-    width: 70%;
+    /* background-color: coral; */
+    width: 77%;
+    border-radius: 20px;
 }
 .card2-image{
     position: relative;
+    justify-content: center;
     display: flex;
+    padding: 10px;
     flex-direction: row;
     align-items: center;
     align-content: center;
+    border-radius: 20px;
+    /* background-color: aqua; */
 }
 .card2-content{
     position: relative;
     display: flex;
-    flex-direction: column;
-    height: 80%;
-    background-color: yellow;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    height: 70%;
+    padding: 1%;
     align-content: stretch;
+    border-radius: 20px;
 }
 .card2-buttons{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 20%;
-    background-color: bisque;
+    height: 30%;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
     align-content: center;
+    /* background-color: aqua; */
 }
-.card3{
+.card3{ 
     position: relative;
     display: flex;
     flex-direction: row;
@@ -131,10 +233,10 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: white;
-    border-color:3px solid red;
+    row-gap: 10px;
+    column-gap: 10px;
     height: 20%;
-
+    border-radius: 20px;
 }
 .card3-part1{
     position: relative;
@@ -144,11 +246,12 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: darkmagenta;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 .card3-part2{
     position: relative;
@@ -158,11 +261,12 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: tomato;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 .card3-part3{
     position: relative;
@@ -172,11 +276,12 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: fuchsia;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 .card3-part4{
     position: relative;
@@ -186,11 +291,12 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: lawngreen;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 .card3-part5{
     position: relative;
@@ -200,11 +306,12 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: grey;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 .card3-part6{
     position: relative;
@@ -214,85 +321,115 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: green;
+    background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    border-radius: 20px;
 }
 
 .card4{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-color: 3px solid red;
+    row-gap: 5px;
+    /* padding: 10px; */
+    border-color: 3px solid #E5F690;
+    /* background-color: white; */
     height: 60%;
+    border-radius: 20px;
 }
 
 .changing-catalog{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: hotpink;
+    background-color: #EFF3DD;
     height: 10%;
+    border-radius: 20px;
 }
 .statistics-graphs{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: skyblue;
+    background-color: #EFF3DD;
     height: 90%;
+    border-radius: 20px;
 }
 .card5{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    row-gap: 10px;
+    background-color: #EFF3DD;
     border-color:3px solid red;
+    padding: 7px;
     height: 100%;
+    /* align-items: ; */
+    border-radius: 20px;
 }
 .card5-profile-infos{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: darkred;
-    height: 50%;
+    border: 3px solid #E5F690;
+    background-color: #10292F;
+    padding: 20px 10px;
+    row-gap: 10px;
+    height: 30%;
+    /* width: 95%; */
+    align-self: center;
     align-items: center;
     align-content: center;
+    border-radius: 20px;
+    /* color: #EFF3DD; */
+}
+
+.card5-profile-infos p{
+    color: #EFF3DD;
 }
 .card5-settings{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: skyblue;
-    height: 50%;
+    background-color: #E5F690;
+    height: 70%;
     align-items: center;
-    align-content: center;
+    align-content:center;
+    border-radius: 20px;
+    padding: 20px 10px;
+    /* width: 95%; */
+    border: 3px solid #10292F;
+    /* align-self: center; */
 }
 
 .input1 , .input2 , .input3  , .input4 , .input5 , .input6{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 15%;
+    height: 16.65%;
+    border-radius: 20px;
 }
+
 .card5-profile-infos-part1{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 40%;
+    /* height: 40%; */
     align-items: center;
     align-content: center;
+    border-radius: 20px;
 }
 
 .card5-profile-infos-part2{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 60%;
+    /* height: 60%;  */
     align-items: center;
     align-content: center;
+    border-radius: 20px;
 }
 
 .card5-part1{
@@ -300,6 +437,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 10%;
+    border-radius: 20px;
 }
 
 .card5-part2{
@@ -307,6 +445,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 90%;
+    border-radius: 20px;
 }
 
 .Save-Changes{
@@ -316,3 +455,44 @@ body{
     align-items: center;
     align-content: center;
 }
+
+.card5-profile-infos-part1 img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #E5F690;
+    border-radius: 18px;
+}
+
+.card2-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.Start{
+    background-color: #10292F;
+    border-radius: 10px;
+    color: #E5F690;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 7px; 
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    transform: translateY(7px);
+}
+
+.Start:hover {
+    background-color: #E5F690;
+    color: #10292F;
+}
+
+
+input:placeholder-shown {
+    background-color: #10292F;
+    border-radius: 20px;
+    text-overflow: ellipsis;
+  }
