@@ -95,7 +95,8 @@ body{
     position:relative;
     display: flex;
     flex-direction: column;
-    /* background-color: saddlebrown; */
+    border: 1px solid #10292F;
+    background-color: #10292F;
     padding: 4%;
     align-items: center;
     justify-content: center;
@@ -104,6 +105,18 @@ body{
     row-gap: 20px;
     border-radius: 20px;
     /* padding: 10px; */
+}
+
+.friends1-Players, .friends2-Players, .friends3-Players, .friends4-Players, .friends5-Players
+{
+    background-position: center;
+    background-size: contain;
+}
+.friends1 img, .friends2 img, .friends3 img, .friends4 img, .friends5 img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #10292F;
+    border-radius: 50%;
 }
 
 .friends1 , .friends2 , .friends3, .friends4, .friends5{
@@ -124,7 +137,8 @@ body{
     position:relative;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
+    border: 1px solid #10292F;
+    background-color: #10292F;
     padding: 4%;
     align-items: center;
     justify-content: center;
@@ -147,17 +161,13 @@ body{
     padding: 5%;
     
 }
+
 .Tournament1-Players, .Tournament2-Players , .Tournament3-Players, .Tournament4-Players, .Tournament5-Players{
     position: relative;
     display: flex;
 }
 
 .Tournament1-name, .Tournament2-name , .Tournament3-name, .Tournament4-name, .Tournament5-name{
-    position: relative;
-    display: flex;
-}
-
-join{
     position: relative;
     display: flex;
 }
@@ -230,14 +240,30 @@ join{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     align-content: center;
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 40px;
     height: 20%;
     border-radius: 20px;
 }
+
+.card3-part1 h3, .card3-part2 h3, .card3-part3 h3, .card3-part4 h3, .card3-part5 h3, .card3-part6 h3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    width: 60%;
+}
+.card3-part1 h1, .card3-part2 h1, .card3-part3 h1, .card3-part4 h1, .card3-part5 h1, .card3-part6 h1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    /* width: 40%; */
+}
+
 .card3-part1{
     position: relative;
     display: flex;
@@ -247,14 +273,16 @@ join{
     align-items: center;
     align-content: center;
     background-color: #EFF3DD;
-    column-gap: 20px;
+    /* column-gap: 20px; */
     row-gap: 20px;
     height: 50%;
     width: 30%;
+    /* padding: 1%; */
     border-radius: 20px;
 }
 .card3-part2{
     position: relative;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -269,6 +297,7 @@ join{
     border-radius: 20px;
 }
 .card3-part3{
+    padding: 1%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -285,6 +314,7 @@ join{
 }
 .card3-part4{
     position: relative;
+    /* padding: 1%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -292,13 +322,14 @@ join{
     align-items: center;
     align-content: center;
     background-color: #EFF3DD;
-    column-gap: 20px;
+    /* column-gap: 20px; */
     row-gap: 20px;
     height: 50%;
     width: 30%;
     border-radius: 20px;
 }
 .card3-part5{
+    padding: 1%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -324,6 +355,7 @@ join{
     background-color: #EFF3DD;
     column-gap: 20px;
     row-gap: 20px;
+    padding: 1%;
     height: 50%;
     width: 30%;
     border-radius: 20px;
@@ -373,11 +405,11 @@ join{
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 3px solid #E5F690;
-    background-color: #10292F;
-    padding: 20px 10px;
+    border: 1px dashed #10292F;
+    background-color: #E5F690;
+    padding: 15px;
     row-gap: 10px;
-    height: 30%;
+    height: 40%;
     /* width: 95%; */
     align-self: center;
     align-items: center;
@@ -386,31 +418,64 @@ join{
     /* color: #EFF3DD; */
 }
 
-.card5-profile-infos p{
-    color: #EFF3DD;
-}
+/* .card5-profile-infos p{
+    color: #;
+} */
 .card5-settings{
-    position: relative;
+    position:relative;
     display: flex;
     flex-direction: column;
-    background-color: #E5F690;
-    height: 70%;
+    border: 1px solid #10292F;
+    /* padding: 4%; */
     align-items: center;
-    align-content:center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    row-gap: 20px;
     border-radius: 20px;
-    padding: 20px 10px;
-    /* width: 95%; */
-    border: 3px solid #10292F;
-    /* align-self: center; */
+    background-color: #10292F;
+}
+.input1 input:focus-visible, .input2 input:focus-visible, .input3 input:focus-visible, .input4 input:focus-visible, .input5 input:focus-visible,.input6 input:focus-visible{
+    outline: 2px solid orange;
+}
+
+input:focus, input:not(:placeholder-shown){
+    border-radius: 20px;
+    background-color: #10292F;
+    color: #EFF3DD;
+    border: 2px solid rebeccapurple;
 }
 
 .input1 , .input2 , .input3  , .input4 , .input5 , .input6{
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 16.65%;
+    height: 15%;
+    /* width: 125%; */
+    background-color: #E5F690;
     border-radius: 20px;
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    /* height: 20%; */
+    /* height: 15%; */
+    align-items: center;
+    /* background-color:#E5F690; */
+    /* border-radius: 20px; */
+    border: 1px solid #10292F;
+    /* background-color: #E5F690; */
+    padding: 5%;
 }
+
+.input1 p, .input2 p, .input3  p, .input4 p, .input5 p, .input6p{
+    text-align: center;
+    padding: 1%;
+    /* padding-botto; */
+}
+
+.input1 input, .input2 input, .input3  input, .input4 input, .input5 input, .input6 input{
+    padding: 3%;
+}
+
 
 .card5-profile-infos-part1{
     position: relative;
@@ -429,15 +494,33 @@ join{
     /* height: 60%;  */
     align-items: center;
     align-content: center;
+    justify-content: center;
     border-radius: 20px;
+    row-gap: 10px;
+}
+
+.email , .name, .nickname, .description , .level{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20%;
 }
 
 .card5-part1{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    /* height: 10%; */
     border-radius: 20px;
+}
+
+.card5-part1 p{
+    color: #EFF3DD;
 }
 
 .card5-part2{
@@ -446,20 +529,30 @@ join{
     flex-direction: column;
     height: 90%;
     border-radius: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 3%;
+    /* align-items: center; */
+    align-content: center;
 }
 
+.card5-part2 a{
+    border: 1px solid  #E5F690;
+}
 .Save-Changes{
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
     align-content: center;
+    /* height: 10%; */
+
 }
 
 .card5-profile-infos-part1 img{
     width: 100px;
     height: 100px;
-    border: 2px solid #E5F690;
+    border: 1px solid #10292F;
     border-radius: 18px;
 }
 
@@ -482,10 +575,11 @@ join{
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    transform: translateY(7px);
+    /* transform: translateY(7px); */
 }
 
 .Start:hover {
+    border: 1px solid #10292F;
     background-color: #E5F690;
     color: #10292F;
 }
@@ -495,4 +589,199 @@ input:placeholder-shown {
     background-color: #10292F;
     border-radius: 20px;
     text-overflow: ellipsis;
+  }
+
+
+  @media screen  and (max-width : 1405px)
+  {
+    .dashboard-container{
+        max-height: none;
+        height: 100%;
+        width: 100%;
+        row-gap: 20px;
+        grid-template-rows: 320px 550px 320px;
+        grid-template-columns: 800px
+    }
+    .card1 , card2, .card5{
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+    }
+    .card1-enlign-freinds , .card1-enlign-tournaments , .freinds-list, .Tournaments-list{
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 0;
+    }
+    .card1-enlign-freinds{
+        border: 2px solid red;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 50%;
+        height: 100%;
+    }
+    .freinds-list{
+        border: 2px solid red;
+        position: relative;
+        flex-direction: row;
+        column-gap: ;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .card1-enlign-tournaments{
+        border: 2px solid blue;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 50%;
+        height: 100%;
+    }
+    .Tournaments-list{
+        border: 2px solid blue;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* height: 100%; */
+        width: 50%;
+    }
+
+    .col1, .col3{
+        /* display: flex; */
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .card5-profile-infos , .card5-settings , .card5-part1 ,.card5-part2 , .card5-part3, .card5-part4,  .card5-part5 , .card5-part6{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .card5-profile-infos{
+        width: 100%;
+    }
+    .input1 , .input2 , .input3 , .input4 , .input5, .input6{
+        width: 30%;
+        /* padding:; */
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+    .card5-part2{
+        column-gap: 3px;
+        row-gap: 10px;
+        padding: 0;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .card5-settings{
+        padding: 1%;
+    }
+
+    .card5-profile-infos{
+        border: 2px solid red;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        width: 30%;
+        height: 100%;
+    }
+    .card5-profile-infos-part1{
+        border: 2px solid red;
+        position: relative;
+        /* display: flex; */
+        /* flex-direction: column; */
+        height: 100%;
+    }
+    .card5-profile-infos-part1 img{
+        width: 70px;
+        height: 70px;
+    }
+    .card5-profile-infos-part2{
+        border: 2px solid red;
+        position: relative;
+        display: flex;
+        row-gap: 0px;
+        flex-direction: column; 
+        height: 100%;
+    }
+    .card5-settings{
+        border: 2px solid blue;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+    }
+    .card5-part1{
+        border: 2px solid blue;
+        /* display: flex; */
+        /* flex-direction: column; */
+        position: relative;
+        height: 10%;
+    }
+    .card5-part2{
+        border: 2px solid blue;
+        flex-direction: row;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        position: relative;
+        height: 90%;
+    }
+    .card2-content h1{
+        font-size:larger;
+    }
+    .card2-content h3{
+        font-size: medium;
+    }
+
+    .card2-col1{
+        border: 2px solid blue;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .card2-buttons {
+        width: 30%;
+        display: flex;
+        /* flex-direction: column; */
+        column-gap: 3px;
+        justify-content: center;
+        border: 2px solid blue;
+        height: 100%;
+    }
+    .card2-content{
+        border: 2px solid darkcyan;
+        width: 70%;
+        height: 100%;
+    }
+    .Start{
+        font-size: 13px;
+    }
+    .card2-col1{
+        width: 89%;
+    }
+  } 
+
+
+  @media screen  and (max-width : 840px)
+  {
+    .dashboard-container{
+        max-height: none;
+        height: 100%;
+        width: 100%;
+        row-gap: 20px;
+        grid-template-rows: 320px 550px 320px;
+        grid-template-columns: 400px
+    }
   }
