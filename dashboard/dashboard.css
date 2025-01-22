@@ -231,7 +231,7 @@ body{
     height: 30%;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
     align-content: center;
     /* background-color: aqua; */
 }
@@ -602,9 +602,19 @@ input:placeholder-shown {
         grid-template-rows: 320px 550px 320px;
         grid-template-columns: 800px
     }
+    .col1{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        /* column-gap: 200px; */
+        /* row-gap: 20px; */
+    }
     .card1 , card2, .card5{
         flex-direction: row;
         /* flex-wrap: wrap; */
+    }
+    .card5{
+        column-gap: 10px;
     }
     .card1-enlign-freinds , .card1-enlign-tournaments , .freinds-list, .Tournaments-list{
         position: relative;
@@ -614,38 +624,53 @@ input:placeholder-shown {
         padding: 0;
     }
     .card1-enlign-freinds{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
         width: 50%;
         height: 100%;
     }
+
+    .email , .name, .nickname, .description , .level{
+        /* row-gap: ; */
+        border-radius: 20px;
+        text-align: center;
+ 
+        height: 20%;
+    }
     .freinds-list{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
-        flex-direction: row;
-        column-gap: ;
+        flex-direction: column;
+        row-gap: 10px;
         flex-wrap: wrap;
-        width: 50%;
+        width: 95%;
+        height: 90%;
     }
     .card1-enlign-tournaments{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         /* flex-wrap: wrap; */
         width: 50%;
         height: 100%;
     }
     .Tournaments-list{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         position: relative;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
+        row-gap: 10px;
+        height: 90%;
         /* height: 100%; */
-        width: 50%;
+        width: 95%;
     }
 
     .col1, .col3{
@@ -656,7 +681,12 @@ input:placeholder-shown {
 
     }
 
+    .input1 , .input2 , .input3  , .input4 , .input5 , .input6{
+        height: 30%;
+    }
+
     .card5-profile-infos , .card5-settings , .card5-part1 ,.card5-part2 , .card5-part3, .card5-part4,  .card5-part5 , .card5-part6{
+        position: relative;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
@@ -668,12 +698,17 @@ input:placeholder-shown {
     }
     .input1 , .input2 , .input3 , .input4 , .input5, .input6{
         width: 30%;
-        /* padding:; */
         align-content: center;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;        
+    }
+    .input1 input, .input2 input, .input3  input, .input4 input, .input5 input, .input6 input{
+        padding: 1%;
+        /* align-items: center; */
+        /* justify-content: center; */
+
     }
     .card5-part2{
         column-gap: 3px;
@@ -688,7 +723,7 @@ input:placeholder-shown {
     }
 
     .card5-profile-infos{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -697,46 +732,49 @@ input:placeholder-shown {
         height: 100%;
     }
     .card5-profile-infos-part1{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
-        /* display: flex; */
-        /* flex-direction: column; */
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* height: 26%; */
     }
     .card5-profile-infos-part1 img{
         width: 70px;
         height: 70px;
     }
     .card5-profile-infos-part2{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         position: relative;
         display: flex;
+        row-gap: 10px;
         row-gap: 0px;
         flex-direction: column; 
-        height: 100%;
+        /* height: 73%; */
     }
     .card5-settings{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         position: relative;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 70%;
-        height: 100%;
+        /* height: 100%; */
     }
     .card5-part1{
-        border: 2px solid blue;
-        /* display: flex; */
-        /* flex-direction: column; */
         position: relative;
-        height: 10%;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        /* height: 10%; */
     }
     .card5-part2{
-        border: 2px solid blue;
+        position: relative;
+        /* border: 2px solid blue; */
+        display: flex;
         flex-direction: row;
         row-gap: 20px;
-        flex-wrap: wrap;
-        position: relative;
-        height: 90%;
+        column-gap: 10px;
+        /* flex-wrap: wrap; */
+        /* height: 90%; */
     }
     .card2-content h1{
         font-size:larger;
@@ -746,7 +784,7 @@ input:placeholder-shown {
     }
 
     .card2-col1{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         flex-direction: row;
         flex-wrap: wrap;
         position: relative;
@@ -754,22 +792,32 @@ input:placeholder-shown {
     .card2-buttons {
         width: 30%;
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         column-gap: 3px;
+        row-gap: 5px;
         justify-content: center;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         height: 100%;
     }
     .card2-content{
-        border: 2px solid darkcyan;
+        /* border: 2px solid darkcyan; */
         width: 70%;
         height: 100%;
     }
     .Start{
-        font-size: 13px;
+        padding: 3px;
+        font-size: 15px;
     }
     .card2-col1{
         width: 89%;
+    }
+    
+    .input1 p, .input2 p, .input3  p, .input4 p, .input5 p, .input6 p{
+
+        font-size: small;
+    }
+    .input1 input, .input2 input, .input3  input, .input4 input, .input5 input, .input6 input{
+        width: 130px;
     }
   } 
 
@@ -784,4 +832,106 @@ input:placeholder-shown {
         grid-template-rows: 320px 550px 320px;
         grid-template-columns: 400px
     }
+    .card5{
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .card5-settings{
+        /* flex-direction: column; */
+        row-gap: 5px;
+    }
+    .card2-content{
+        width: 60%;
+    }
+    .card2-buttons {
+        row-gap: 10px;
+        width: 40%;
+    }
+    .card2-content h1{
+        font-size: medium;
+    }
+    .card2-content h3{
+        font-size:small;
+    }
+    .card2 img{
+        height: 70px;
+        width: 70px;
+    }
+    .input1 input, .input2 input, .input3  input, .input4 input, .input5 input, .input6 input{
+        /* font-size: smaller; */
+        width: 100px;
+    }
+    .card3-part1 h3, .card3-part2 h3, .card3-part3 h3, .card3-part4 h3, .card3-part5 h3, .card3-part6 h3{
+        font-size:small;
+    }
+    .card3-part1 h1, .card3-part2 h1, .card3-part3 h1, .card3-part4 h1, .card3-part5 h1, .card3-part6 h1{
+        font-size: larger;
+    }
+    .card3{
+        column-gap: 20px;
+    }
+    .input1 p, .input2 p, .input3 p, .input4 p, .input5,p .input6 p{
+        font-size: 12px;
+    }
+
+    .card5-part1{
+        /* background-color: yellow; */
+        height: 10%;
+    }
+    .card5-part2{
+        /* padding: ; */
+        background-color: aqua;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .save_changes1{
+        background-color: violet;
+        height: 10%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .card5-part2 a{
+        display: flex;
+        flex-direction: column;
+        /* column-gap: 0px; */
+    }
+
+    .Start{
+        padding: 3px;
+        font-size: 13px;
+    }
+
+    
+    .card5-profile-infos-part1 img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .input1 , .input2 , .input3  , .input4 , .input5 , .input6{
+        /* background-position:; */
+        /* text-align: */
+        /* color: #EFF3DD; */
+        /* height: 10% */
+    }
+    .card5-settings{
+        height: 65%;
+        width: 100%;
+    }
+
+    .card5-profile-infos{
+        padding: 0px;
+        height: 35%;
+        width: 100%;
+        column-gap: 20px;
+    }
+    .card5-profile-infos-part2{
+        padding: px;
+    }
+
+
   }
