@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn/SignIN</title>
+    <link rel="stylesheet" href="login_signin.css">
+    <link rel="stylesheet" type="text/css" href="stars_animation.css">
+</head>
+<body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+   <div class="container" id="main">
+    <div class="sign_up">
+        <form action="#"> 
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-google"></i></i></a>
+                <a href="#" class="social"><i class="Intra_42"></i></a>
+            </div>
+            <p>Or use Your email for registration</p>
+            <input type="text" name="txt" placeholder="Name" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Password" required="">
+            <button>Sign UP</button>
+        </form>
+    </div>
+    <div class="sign_in">
+        <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="social"><i class="Intra_42"></i></a>
+            </div>
+            <p>Or use Your Account</p>
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Password" required="">
+            <a href="#">you Forget your password ?</a>
+            <button>Sign IN</button>
+        </form>
+    </div>  
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-left">
+                <h1>Wellcome Back!</h1>
+                <p>To keep connected with us please login with yourpersonal info</p>
+                <button id="signIn">Sign IN</button>
+            </div>
+            <div class="overlay-right">
+                <h1>Hello, Mate!</h1>
+                <p>Enter your Personal details and start journey with us</p>
+                <button id="signUp">Sign UP</button>
+            </div>
+        </div>
+
+    </div>
+   </div>   
+   <script type="text/javascript">
+    const signUpButton = document.getElementById('signUp');
+    const signINButton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+
+    signUpButton.addEventListener('click', () =>{
+        main.classList.add("right-panel-active");
+    });
+    signINButton.addEventListener('click', () =>{
+        main.classList.remove("right-panel-active");
+    });
+   </script>
+</body>
+</html>
