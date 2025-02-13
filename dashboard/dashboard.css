@@ -5,9 +5,9 @@
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p{
+/* p{
     color:black;
-}
+} */
 
 body{
     background-color: #10292F;
@@ -73,7 +73,7 @@ body{
 
 
 .card1-enlign-freinds p , .card1-enlign-tournaments p{
-    color: black;
+    /* color: black; */
     padding: 2%;
 }
 .card1-enlign-freinds{ 
@@ -123,10 +123,11 @@ body{
     position: relative;
     display: flex;
     flex-direction: row;
+    color: #EFF3DD;
     /* height: 20%; */
     height: 15%;
     align-items: center;
-    background-color:#E5F690;
+    /* background-color:#E5F690; */
     border-radius: 20px;
     border: 1px solid #10292F;
     /* background-color: #E5F690; */
@@ -154,8 +155,9 @@ body{
     display: flex;
     flex-direction: row;
     height: 15%;
+    color: #EFF3DD;
     align-items: center;
-    background-color:#E5F690;
+    /* background-color:#E5F690; */
     border-radius: 20px;
     border: 1px solid #10292F;
     padding: 5%;
@@ -406,10 +408,11 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px dashed #10292F;
-    background-color: #E5F690;
+    background-color: #10292F;
     padding: 15px;
     row-gap: 10px;
     height: 40%;
+    color: #EFF3DD;
     /* width: 95%; */
     align-self: center;
     align-items: center;
@@ -451,7 +454,8 @@ input:focus, input:not(:placeholder-shown){
     flex-direction: column;
     height: 15%;
     /* width: 125%; */
-    background-color: #E5F690;
+    /* background-color: #E5F690; */
+    color: #EFF3DD;
     border-radius: 20px;
     position: relative;
     display: flex;
@@ -474,6 +478,7 @@ input:focus, input:not(:placeholder-shown){
 
 .input1 input, .input2 input, .input3  input, .input4 input, .input5 input, .input6 input{
     padding: 3%;
+    border: #E5F690 1px solid;
 }
 
 
@@ -573,6 +578,7 @@ input:focus, input:not(:placeholder-shown){
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
+    border: #E5F690 1px solid;
     text-decoration: none;
     transition: background-color 0.3s ease;
     /* transform: translateY(7px); */
@@ -880,7 +886,7 @@ input:placeholder-shown {
     }
     .card5-part2{
         /* padding: ; */
-        background-color: aqua;
+        /* background-color: aqua; */
         height: 80%;
         align-items: center;
         justify-content: center;
@@ -889,7 +895,7 @@ input:placeholder-shown {
         row-gap: 10px;
     }
     .save_changes1{
-        background-color: violet;
+        /* background-color: violet; */
         height: 10%;
         position: relative;
         display: flex;
@@ -913,10 +919,7 @@ input:placeholder-shown {
     }
 
     .input1 , .input2 , .input3  , .input4 , .input5 , .input6{
-        /* background-position:; */
-        /* text-align: */
-        /* color: #EFF3DD; */
-        /* height: 10% */
+        position: relative;
     }
     .card5-settings{
         height: 65%;

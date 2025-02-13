@@ -45,7 +45,7 @@ body
 }
 
 form{
-    background-color: cadetblue;
+    background-color: #EFF3DD;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,7 @@ input{
     margin: 8px 15px;
     width: 100%;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #10292F;
     outline: none;
 }
 
@@ -135,9 +135,11 @@ button:active{
 .overlay{
     position: relative;
     color: bisque;
-    background-color: darkcyan;
+    /* background-color: #E5F690; */
+    border: #E5F690 2px solid;
     left: -100%;
     height: 100%;
+
     width: 200%;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
@@ -179,7 +181,14 @@ container.right-panel-active .overlay-right{
 }
 
 .social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #10292F;
+    padding: 10px 20px;
 }
 
 .social-container a{
