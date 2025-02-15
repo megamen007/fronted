@@ -149,6 +149,11 @@ button:active{
     transform: translateX(50%);
 }
 
+.overlay-left, .overlay-right img{
+    height: 100px;
+    width: 100px;
+}
+
 .overlay-left, .overlay-right{
     position: absolute;
     display: flex;
